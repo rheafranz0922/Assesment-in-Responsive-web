@@ -1,0 +1,95 @@
+// The variables of a color
+$primary_color_heading: #000000;
+$primary_color_bg: #b2eeff;
+$primary_color_hover: #e056ab;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('blue background.jpg'); // Replace 'your-image-url.jpg' with the actual path or URL of your image
+    background-size: cover; // Adjust as needed
+    background-position: center; // Adjust as needed
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    background: $primary_color_bg;
+    display: flex;
+    justify-content: space-between;
+
+    & .navigation_logo {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 12px 12px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        color: $primary_color_heading; // Set the color for the logo
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .navigation_ul {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 12px 12px;
+                margin-right: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $primary_color_hover;
+                    transition: 0.5s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    .slider_slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .slider_wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+  
+      .slider_back {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      .slider_inner {
+        z-index: 1;
+      }
+  
+      .slider_content {
+        text-align: ce ter;
+        color: #fff;
+      }
+    }
+  }

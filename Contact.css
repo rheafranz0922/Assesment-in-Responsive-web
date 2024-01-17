@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("gif.gif") center/cover no-repeat;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: rgb(255, 146, 239);
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.container p {
+  margin-bottom: 40px;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #ff92ef;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #ff69e3;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=Contact.css.map */

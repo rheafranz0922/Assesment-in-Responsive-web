@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: url("blue background.jpg") center/cover no-repeat; /* Replace 'your-image-url.jpg' with the actual path to your image */
+}
+
+.service-wrapper {
+  padding: 5% 8%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(165, 14, 133);
+  font-size: 5rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: transparent;
+  letter-spacing: 4px;
+  background-color: rgb(255, 97, 207);
+  background: linear-gradient(8deg, rgb(255, 69, 196) 0%, rgb(0, 230, 173), rgb(41, 17, 45) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  height: 8px;
+  width: 80%;
+  box-sizing: 8px;
+  background-color: white;
+  animation: move 5s linear infinite; /* Animation for movement */
+}
+
+h1 span {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: rgb(165, 14, 133);
+  animation: anim 5s linear infinite;
+}
+
+@keyframes anim {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 88%;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px); /* Adjust the movement distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px; /* Adjust the width of each card as needed */
+  height: 300px; /* Adjust the height of each card as needed */
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #99fff1;
+  padding: 3% 8%;
+  border: 0.2px solid rgba(114, 226, 174, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  transition: 0.6s;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card i {
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.card h3 {
+  margin-top: 10px; /* Adjust the margin-top as needed */
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}/*# sourceMappingURL=Service.css.map */

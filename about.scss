@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(220, 170, 245);
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    flex: 1;
+}
+
+.title h1 {
+    font-size: 2em;
+}
+
+.image-section {
+    flex: 0 0 60%; /* Adjust the width as needed for a notebook size */
+    text-align: right;
+}
+
+.image-section img {
+    max-width: 100%; /* Set the maximum width to 100% for responsiveness */
+    height: auto;  /* Automatically adjust the height while maintaining aspect ratio */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;/* Remove underlines from links */
+    color: white;
+    font-weight: bold; /*  To apply bold font weight to the text */
+}
+
+.social {
+    display: flex; /* Use flexbox for social media links layout */
+    gap: 10px; /* Set a gap from a icon*/
+    margin-top: 20px; /* Margin at the top of the social media section*/
+}
+
+.social a {
+    text-decoration: none;
+    color: #333; /* Set the text color to a dark color */
+}
